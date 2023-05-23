@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 
 // Style Sheets
 import "../Header.css";
@@ -33,10 +34,12 @@ export default function Header() {
   return(
     <div className="header">
       <div className="header-content">
-        <div className="header-logo-container">
-          <span className="header-logo logo-ed">Ed</span>
-          <span className="header-logo logo-video">video</span>
-        </div>
+        <Link to="/home"> 
+          <div className="header-logo-container">
+            <span className="header-logo logo-ed">Ed</span>
+            <span className="header-logo logo-video">video</span>
+          </div>
+        </Link>
         <div className="header-link">
           <ThemeMode/>
         </div>
