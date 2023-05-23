@@ -9,7 +9,6 @@ import Home from './pages/Home';
 import Watch from './pages/Watch';
 import NoPage from './pages/NoPage';
 import Header from './components/Header';
-import Video from './components/Video'; 
 //<Video url={"https://www.youtube.com/watch?v=bYvltYwQR3w"}/>
 
 export default function App() {
