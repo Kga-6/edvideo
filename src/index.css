@@ -1,3 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+:root{
+  --body_background:white;
+  --body_color:black;
+  --body_low_background:#f7f7f7;
+
+  /*Header*/
+  --header-background:#ffffff;
+  --header-bottom-border-color:#ebebeb;
+  --compony_logo_video:#000000;
+
+  /*Home*/
+  --video-tag-btn-background-color:#f7f7f7;
+  --video-tag-btn-border-color:#eeeeee;
+  --video-tag-btn-selected-background-color:#23272f;
+  --video-tag-btn-selected-color:#ffffff;
+
+  /*Watch*/
+  --watch-video-question-header-background-color:#f7f7f7;
+}
+
+[data-theme="dark"]{
+  --body_background:#181a20;
+  --body_color:white;
+  --body_low_background:#23272f;
+
+  /*Header*/
+  --header-background:#23272f;
+  --header-bottom-border-color:#1c1c1c;
+  --compony_logo_video:#ffffff;
+
+  /*Home*/
+  --video-tag-btn-background-color:#23272f;
+  --video-tag-btn-border-color:transparent;
+  --video-tag-btn-selected-background-color:#ffffff;
+  --video-tag-btn-selected-color:#000000;
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

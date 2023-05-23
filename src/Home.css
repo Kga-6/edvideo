@@ -1,0 +1,136 @@
+a{ 
+  color: var(--body_color);
+  text-decoration: none;
+}
+
+.home{
+  color: var(--body_color);
+}
+
+/* Filter */
+.video-tags-filter{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  overflow-x:auto;
+  scroll-behavior: smooth;
+}
+.video-tag-btn{
+  background-color: var(--video-tag-btn-background-color);
+  color: var(--body_color);
+  padding: 0px 15px;
+  margin: 6px;
+  height: 35px;
+  border-style: none;
+  cursor: pointer;
+  border-radius: 6px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--video-tag-btn-border-color);
+  transition: 0.25s;
+}
+.video-tag-btn:active{
+  scale: 0.85;
+}
+.video-tag-label{
+  font-size: 18px;
+  cursor: pointer;
+}
+[data-seleted="true"]{
+  background-color: var(--video-tag-btn-selected-background-color);
+  color: var(--video-tag-btn-selected-color);
+}
+
+/* Video List */
+.video-list{
+  height: 80vh;
+  max-width: 1400px;
+  margin: auto;
+}
+.video-list-container{
+  display: grid;
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
+  gap: 6px;
+  height: 100%;
+}
+.Play{
+  padding: 15px;
+  height: fit-content;
+  background-color: transparent;
+  cursor: pointer;
+}
+.play-image-container{
+  position: relative;
+  width: 100%;
+}
+.play-image{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.play-time{
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  background-color: rgba(0, 0, 0, 0.781);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.play-info-title{
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  margin-bottom: 6px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.play-info-qLength{
+  width: fit-content;
+  background-color: var(--body_low_background);
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.empty-list{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  padding: 20px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1300px) {
+  .video-list-container{
+    grid-template-columns: repeat(3, minmax(400px, 1fr));
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .video-list-container{
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .video-list-container{
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  .play-info{
+    padding: 5px 15px;
+  }
+  .Play{
+    padding: 0px;
+  }
+  .play-image{
+    border-radius: 0px;
+  }
+}
+

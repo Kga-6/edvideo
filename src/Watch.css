@@ -1,0 +1,25 @@
+.back-header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--header-background);
+  color: var(--body_color);
+  padding: 6px 20px;
+  height: 45px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-color: var(--header-bottom-border-color);
+}
+
+.back-header-container{
+  font-weight: bold;
+  font-size: 19px;
+  user-select: none;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.watch{
+  height: fit-content;
+  padding: 10px;
+}
