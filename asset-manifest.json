@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/edvideo/static/css/main.1bfea97b.css",
-    "main.js": "/edvideo/static/js/main.70b1368c.js",
+    "main.js": "/edvideo/static/js/main.299cccba.js",
     "static/js/787.01e8ec8e.chunk.js": "/edvideo/static/js/787.01e8ec8e.chunk.js",
     "static/media/volume.svg": "/edvideo/static/media/volume.ff473eb16f437a95223c91504f501054.svg",
     "index.html": "/edvideo/index.html",
@@ -11,11 +11,11 @@
     "static/media/play.svg": "/edvideo/static/media/play.8a149f64342aa42c87f00827ccc8ac0c.svg",
     "static/media/pause.svg": "/edvideo/static/media/pause.8bc214b21d9e391f171d6cbca9ffe194.svg",
     "main.1bfea97b.css.map": "/edvideo/static/css/main.1bfea97b.css.map",
-    "main.70b1368c.js.map": "/edvideo/static/js/main.70b1368c.js.map",
+    "main.299cccba.js.map": "/edvideo/static/js/main.299cccba.js.map",
     "787.01e8ec8e.chunk.js.map": "/edvideo/static/js/787.01e8ec8e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1bfea97b.css",
-    "static/js/main.70b1368c.js"
+    "static/js/main.299cccba.js"
   ]
 }
