@@ -1,31 +1,25 @@
 import axios from "axios";
 
-const usersData = 'users.json'
+export const fetch_videos_tags = async function(){
+  console.log("[Fetching] Videos Tags...")
 
-export const getUser = async function(userId){
-
-  let userData = [] 
-
-  try {
-    const response = await axios.get(usersData);
-
-    response.data.forEach((user) => {
-      if(user.id == userId){
-        userData = user
-      }
-    });
-
-    return userData;
-  } catch (error) {
-    console.error(error);
+  try{
+    const response = await axios.get('/videosTags.json')
+    console.log(response.data)
+    return response
+  } catch (error){
+    console.log(error)
   }
-
 }
 
-export const getAllVideos = function(limit){
-  
-}
+export const fetch_videos = async function(){
+  console.log("[Fetching] Videos...")
 
-export const getVideo = function(videoId){
-  
+  try{
+    const response = await axios.get('/videos.json')
+    console.log(response.data)
+    return response
+  } catch (error){
+    console.log(error)
+  }
 }

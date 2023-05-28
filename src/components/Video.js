@@ -7,9 +7,6 @@ import "../Video.css";
 // Components
 import Duration from '../components/Duration';
 
-// JSONS Data
-import videos from '../date_folder/videos.json'
-
 // Images
 import pauseIcon from '../images/pause.svg'
 import playIcon from '../images/play.svg'
@@ -22,12 +19,13 @@ class Video extends Component{
 
   componentDidMount() {
 
-    videos.map((video) => {
-      if(video.videoId == this.props.id){
-        this.load(video.url) // Load the video on mount with the url passed in
-      }
-    })
+    // videos.map((video) => {
+    //   if(video.videoId == this.props.id){
+    //     this.load(video.url) // Load the video on mount with the url passed in
+    //   }
+    // })
 
+    this.load(this.props.videoData.url) // Load the video on mount with the url passed in
     this.fetchVideoData() // Fetch the video data from the JSON file
 
     document.addEventListener('fullscreenchange', this.handleFullscreenChange);
@@ -165,15 +163,15 @@ class Video extends Component{
   }
 
   fetchVideoData = () => {
-    let newData= []
+    let newData= this.props.videoData
     let spots = []
     let answers = []
 
-    videos.forEach((video) => {
-      if(video.videoId == this.props.id){
-        newData = video
-      }
-    })
+    // videos.forEach((video) => {
+    //   if(video.videoId == this.props.id){
+    //     newData = video
+    //   }
+    // })
 
     newData.questions.forEach((question) => {
       spots.push(
