@@ -11,6 +11,7 @@ import Tab from "../components/Tabs";
 // Utili
 import {fetch_videos_tags,fetch_videos} from '../utili/fetch'
 
+const defaultFetchCount = 2
 
 function EmptyList(props){
   const {filter} = props
@@ -52,7 +53,7 @@ export default function Home() {
 
   const [filter, setFilter] = useState("All")
   const [filterVideos, setFilterVideos] = useState([])
-  const [fetchCount, setFetchCount] = useState(15)
+  const [fetchCount, setFetchCount] = useState(defaultFetchCount)
   const [loading, setLoading] = useState(false)
 
   const filterTag = (tag) => {
@@ -81,7 +82,7 @@ export default function Home() {
 
 
   useEffect(() => {
-    setFetchCount(15)
+    setFetchCount(defaultFetchCount)
     getVideos()
   },[filter,videos])
 
@@ -116,24 +117,12 @@ export default function Home() {
       <div className="home">
 
         {
-          loadingTags ? <div>Loading Tags...</div> :
+          loadingTags ? <div className="loading-div"> <PulseLoader size={10} color="#646464"/> </div> :
           <Tab tagList={tags} filter={filter} filterTag={filterTag}/>
-          // <div className="video-tags-filter">
-          //   {
-          //     // lets use index as key because we know that the data is not going to change
-          //     tags.map((tag, index) => {
-          //       return(
-          //         <button onClick={()=>{filterTag(tag)}} data-seleted={filter==tag?"true":"false"} className="video-tag-btn" key={index}>
-          //           <label className="video-tag-label">{tag}</label>
-          //         </button>
-          //       )
-          //     })
-          //   }
-          // </div>
         }
         
         {
-          loadingVideos ? <div>Loading Videos...</div> :
+          loadingVideos ? <div className="loading-div"> <PulseLoader size={10} color="#646464"/> </div> :
           <div className="video-list">
             {
               filterVideos.length > 0 ? // if
@@ -154,24 +143,23 @@ export default function Home() {
         }
 
         { filterVideos.length > 0 && 
+
         <div className="video-load">
           <button className="load-more" onClick={
             ()=>{
 
-              let newCount = fetchCount + 15
-              if(newCount >= videos.length){
-                newCount = videos.length
+              if(fetchCount >= videos.length){
                 console.log("No more videos to load")
               }else{
+                let newCount = fetchCount + defaultFetchCount
                 setLoading(true)
                 setFetchCount(newCount)
               }
-              setLoading(true)
+
             }
           }>{loading?<PulseLoader size={10} color="#646464" />:"Load More"}</button>
         </div>}
 
-        
       </div>
     </>
   )

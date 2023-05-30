@@ -172,7 +172,7 @@
           }
         ],
         "answer":[1],
-        "duration":0.17,
+        "duration":0.11,
         "id":0
       },
       {
@@ -196,7 +196,7 @@
           }
         ],
         "answer":[0],
-        "duration":0.17,
+        "duration":0.22,
         "id":1
       },
       {
@@ -215,8 +215,8 @@
           }
         ],
         "answer":[1],
-        "duration":0.17,
-        "id":3
+        "duration":0.67,
+        "id":2
       },
       {
         "question":"Can Javascript run on the server?",
@@ -234,8 +234,8 @@
           }
         ],
         "answer":[0],
-        "duration":0.17,
-        "id":4
+        "duration":0.87,
+        "id":3
       }
     ]
   }

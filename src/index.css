@@ -93,3 +93,10 @@ code {
 .go-to-home-btn:hover{
   background-color: rgb(237, 251, 255);
 }
+
+.loading-div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+}
