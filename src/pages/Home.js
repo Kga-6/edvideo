@@ -5,8 +5,12 @@ import PulseLoader from "react-spinners/PulseLoader";
 // Style Sheets
 import "../Home.css";
 
+// Components
+import Tab from "../components/Tabs";
+
 // Utili
 import {fetch_videos_tags,fetch_videos} from '../utili/fetch'
+
 
 function EmptyList(props){
   const {filter} = props
@@ -27,7 +31,7 @@ function Play(props){
     <Link to={`/watch/${data.videoId}`}>
       <div className="Play">
         <div className="play-image-container">
-          <img className="play-image" loading="lazy" src={data.thumbnail}></img>
+          <img className="play-image" loading="lazy" alt="video thumbnail" src={data.thumbnail}></img>
           <span className="play-time">{data.durationLabel}</span>
         </div>
         <div className="play-info">
@@ -113,22 +117,23 @@ export default function Home() {
 
         {
           loadingTags ? <div>Loading Tags...</div> :
-          <div className="video-tags-filter">
-            {
-              // lets use index as key because we know that the data is not going to change
-              tags.map((tag, index) => {
-                return(
-                  <button onClick={()=>{filterTag(tag)}} data-seleted={filter==tag?"true":"false"} className="video-tag-btn" key={index}>
-                    <label className="video-tag-label">{tag}</label>
-                  </button>
-                )
-              })
-            }
-          </div>
+          <Tab tagList={tags} filter={filter} filterTag={filterTag}/>
+          // <div className="video-tags-filter">
+          //   {
+          //     // lets use index as key because we know that the data is not going to change
+          //     tags.map((tag, index) => {
+          //       return(
+          //         <button onClick={()=>{filterTag(tag)}} data-seleted={filter==tag?"true":"false"} className="video-tag-btn" key={index}>
+          //           <label className="video-tag-label">{tag}</label>
+          //         </button>
+          //       )
+          //     })
+          //   }
+          // </div>
         }
         
         {
-          loadingVideos? <div>Loading Videos...</div> :
+          loadingVideos ? <div>Loading Videos...</div> :
           <div className="video-list">
             {
               filterVideos.length > 0 ? // if

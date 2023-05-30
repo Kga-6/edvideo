@@ -9,19 +9,18 @@
   --body_low_background:#f7f7f7;
 
   /*Header*/
-  --header-background:#ffffff;
+  --header-background:#FAFAFA;
   --header-bottom-border-color:#ebebeb;
   --compony_logo_video:#000000;
 
   /*Home*/
-  --video-tag-btn-background-color:#f7f7f7;
+  --video-tag-btn-background-color:#F1F1F2;
   --video-tag-btn-border-color:transparent;
-  --video-tag-btn-hover-background-color:rgb(236, 236, 236);
-
-  --video-tag-btn-selected-background-color:#23272f;
+  --video-tag-btn-selected-background-color:#0C70EB;
   --video-tag-btn-selected-color:#ffffff;
 
   /*Watch*/
+  --watch-video-header-background-color:white;
   --watch-video-question-header-background-color:#f7f7f7;
 }
 
@@ -38,9 +37,11 @@
   /*Home*/
   --video-tag-btn-background-color:#23272f;
   --video-tag-btn-border-color:transparent;
-  --video-tag-btn-hover-background-color:#2b2f38;
   --video-tag-btn-selected-background-color:#ffffff;
   --video-tag-btn-selected-color:#000000;
+
+  /*Watch*/
+  --watch-video-header-background-color:#181a20;
 }
 
 
