@@ -134,5 +134,109 @@
         "id":2
       }
     ]
+  },
+  {
+    "title":"JavaScript in 100 Seconds",
+    "creator":0,
+    "url":"https://www.youtube.com/watch?v=DHjqpvDnNGE",
+    "locked":false,
+    "rewatch":true,
+    "videoId":3,
+    "thumbnail":"https://i.ytimg.com/vi/DHjqpvDnNGE/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLDRDnZh4he57HaLIPL6i5K-EUZvvA",
+    "durationLabel":"2:35",
+    "tags":["Coding","Medium","English"],
+    "questions":[
+      {
+        "question":"Who created Javascript?",
+        "type":"Multiple choice",
+        "options":[
+          {
+            "option":"A",
+            "text":"James Gosling",
+            "id":0
+          },
+          {
+            "option":"B",
+            "text":"Brendan Eich",
+            "id":1
+          },
+          {
+            "option":"C",
+            "text":"Bjarne Stroustrup",
+            "id":2
+          },
+          {
+            "option":"D",
+            "text":"Elon Musk",
+            "id":3
+          }
+        ],
+        "answer":[1],
+        "duration":0.11,
+        "id":0
+      },
+      {
+        "question":"What is Javascript known for?",
+        "type":"Multiple choice",
+        "options":[
+          {
+            "option":"A",
+            "text":"Building front end web app",
+            "id":0
+          },
+          {
+            "option":"B",
+            "text":"Building Fortnite",
+            "id":1
+          },
+          {
+            "option":"C",
+            "text":"Most popular book",
+            "id":2
+          }
+        ],
+        "answer":[0],
+        "duration":0.22,
+        "id":1
+      },
+      {
+        "question":"You reassign a variable with const",
+        "type":"Multiple choice",
+        "options":[
+          {
+            "option":"A",
+            "text":"True",
+            "id":0
+          },
+          {
+            "option":"B",
+            "text":"False",
+            "id":1
+          }
+        ],
+        "answer":[1],
+        "duration":0.67,
+        "id":2
+      },
+      {
+        "question":"Can Javascript run on the server?",
+        "type":"Multiple choice",
+        "options":[
+          {
+            "option":"A",
+            "text":"True",
+            "id":0
+          },
+          {
+            "option":"B",
+            "text":"False",
+            "id":1
+          }
+        ],
+        "answer":[0],
+        "duration":0.87,
+        "id":3
+      }
+    ]
   }
 ]
