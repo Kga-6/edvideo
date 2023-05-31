@@ -7,6 +7,16 @@
   scroll-behavior: smooth;
   height: 65px;
 }
+.tab-filter-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  overflow-x:hidden;
+  scroll-behavior: smooth;
+  padding: 10px;
+  width: 100%;
+}
 .tab-filter-list{
   display: flex;
   flex-direction: row;
@@ -14,18 +24,18 @@
   align-items: center;
   overflow-x:hidden;
   scroll-behavior: smooth;
-  z-index: 10;
+  user-select: none;
+  z-index: 1;
 }
 
 .tab-filter-left,
 .tab-filter-right{
-
   position:absolute;
   display: flex;
   align-items: center;
-  width: 100px;
+  width: 75px;
   height: 100%;
-  padding: 0 10px;
+  z-index: 2;
 }
 .tab-filter-right{
   right: 0;
@@ -46,6 +56,7 @@
   background-color: white;
   cursor: pointer;
   font-weight: bolder;
+  margin: 0 12px;
 }
 .tab-filter-nav-btn:hover{
   filter: brightness(0.925);
@@ -53,8 +64,8 @@
 .tab-btn{
   background-color: var(--video-tag-btn-background-color);
   color: var(--body_color);
-  padding: 0px 15px;
-  margin: 6px;
+  padding: 4px 12px;
+  margin: 6px 6px 6px 0px;
   height: 35px;
   border-style: none;
   cursor: pointer;

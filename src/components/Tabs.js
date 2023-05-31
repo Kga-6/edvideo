@@ -74,7 +74,7 @@ export default function Tabs({tagList,filter,filterTag}){
   return(
     <div className="tab-filter">
 
-      <div ref={ref} className="tab-filter-list">
+      <div className="tab-filter-container">
 
         {
           showNav && showNavLeft &&
@@ -83,15 +83,17 @@ export default function Tabs({tagList,filter,filterTag}){
           </div>
         }
 
-        {
-          tagList.map((tag, index) => {
-            return(
-              <button onClick={()=>{filterTag(tag)}} data-seleted={filter==tag?"true":"false"} className="tab-btn" key={index}>
-                <label className="tab-label">{tag}</label>
-              </button>
-            )
-          })
-        }
+        <ul ref={ref} className="tab-filter-list">
+          {
+            tagList.map((tag, index) => {
+              return(
+                <button onClick={()=>{filterTag(tag)}} data-seleted={filter==tag?"true":"false"} className="tab-btn" key={index}>
+                  <span className="tab-label">{tag}</span>
+                </button>
+              )
+            })
+          }
+        </ul>
 
         {
           showNav && showNavRight &&

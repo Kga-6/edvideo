@@ -29,16 +29,14 @@ function Play(props){
   const {data} = props
 
   return(
-    <Link to={`/watch/${data.videoId}`}>
-      <div className="Play">
-        <div className="play-image-container">
-          <img className="play-image" loading="lazy" alt="video thumbnail" src={data.thumbnail}></img>
-          <span className="play-time">{data.durationLabel}</span>
-        </div>
-        <div className="play-info">
-          <div className="play-info-title">{data.title}</div>
-          <div className="play-info-qLength">{data.questions.length} Questions</div>
-        </div>
+    <Link className="Play" to={`/watch/${data.videoId}`}>
+      <div className="play-image-container">
+        <img className="play-image" loading="lazy" alt="video thumbnail" src={data.thumbnail}></img>
+        <span className="play-time">{data.durationLabel}</span>
+      </div>
+      <div className="play-info">
+        <div className="play-info-title">{data.title}</div>
+        <div className="play-info-qLength">{data.questions.length} Questions</div>
       </div>
     </Link>
   )
@@ -127,13 +125,13 @@ export default function Home() {
             {
               filterVideos.length > 0 ? // if
 
-                <div className="video-list-container">
-                  {
-                    filterVideos.map(video => {
-                      return <Play key={video.videoId} data={video}/>
-                    })
-                  }
-                </div>
+              <ul className="video-list-container">
+                {
+                  filterVideos.map(video => {
+                    return <Play key={video.videoId} data={video}/>
+                  })
+                }
+              </ul>
 
               : // else
 
@@ -157,7 +155,7 @@ export default function Home() {
               }
 
             }
-          }>{loading?<PulseLoader size={10} color="#646464" />:"Load More"}</button>
+          }>{loading?<PulseLoader size={10} color="#646464" />:"LOAD MORE"}</button>
         </div>}
 
       </div>
