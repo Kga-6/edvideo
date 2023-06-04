@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "/edvideo/static/css/main.7a9bfe5c.css",
-    "main.js": "/edvideo/static/js/main.8cdf0e64.js",
+    "main.css": "/edvideo/static/css/main.577cf0bf.css",
+    "main.js": "/edvideo/static/js/main.7edc4513.js",
     "static/js/787.01e8ec8e.chunk.js": "/edvideo/static/js/787.01e8ec8e.chunk.js",
     "static/media/volume.svg": "/edvideo/static/media/volume.ff473eb16f437a95223c91504f501054.svg",
     "index.html": "/edvideo/index.html",
     "static/media/fullscreen.svg": "/edvideo/static/media/fullscreen.6124d42da1eff9fed8864ae8efdafc76.svg",
     "static/media/volume-mute.svg": "/edvideo/static/media/volume-mute.882595226be55782ec04224c1af9f066.svg",
     "static/media/rewatch.svg": "/edvideo/static/media/rewatch.85600f42d8866e3d3c0a82ab4ca85be8.svg",
+    "static/media/search.svg": "/edvideo/static/media/search.b1f781b99ceaafb9c831949bb54ae3cd.svg",
     "static/media/play.svg": "/edvideo/static/media/play.8a149f64342aa42c87f00827ccc8ac0c.svg",
     "static/media/pause.svg": "/edvideo/static/media/pause.8bc214b21d9e391f171d6cbca9ffe194.svg",
-    "main.7a9bfe5c.css.map": "/edvideo/static/css/main.7a9bfe5c.css.map",
-    "main.8cdf0e64.js.map": "/edvideo/static/js/main.8cdf0e64.js.map",
+    "main.577cf0bf.css.map": "/edvideo/static/css/main.577cf0bf.css.map",
+    "main.7edc4513.js.map": "/edvideo/static/js/main.7edc4513.js.map",
     "787.01e8ec8e.chunk.js.map": "/edvideo/static/js/787.01e8ec8e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a9bfe5c.css",
-    "static/js/main.8cdf0e64.js"
+    "static/css/main.577cf0bf.css",
+    "static/js/main.7edc4513.js"
   ]
 }
