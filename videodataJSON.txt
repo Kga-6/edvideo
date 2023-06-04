@@ -1,0 +1,27 @@
+{
+    "title":"Edvideo",
+    "creator":0,
+    "url":"Edvideo.com",
+    "locked":true,
+    "rewatch":true,
+    "videoId":0,
+    "thumbnail":"Edvideo.png",
+    "durationLabel":"0:00",
+    "tags":["Learn"],
+    "questions":[
+      {
+        "question":"Question 1",
+        "type":"Multiple choice",
+        "options":[
+          {
+            "option":"A",
+            "text":"Hello, World",
+            "id":0
+          }
+        ],
+        "answer":[0],
+        "duration":0.17,
+        "id":0
+      }
+    ]
+  }
